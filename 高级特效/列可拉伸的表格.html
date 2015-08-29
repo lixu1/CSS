@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <style>
+        .resizeDivClass {
+            position: relative;
+            background-color: red;
+            width: 2px;
+            z-index: 1;
+            left: expression(this.parentElement.offsetWidth-1);
+            cursor: e-resize;
+        }
+    </style>
+    <script type="text/javascript">
+        function MouseDownToResize(obj) {
+            obj.mouseDownX = event.clientX;
+            obj.pareneTdW = obj.parentElement.offsetWidth;
+            obj.pareneTableW = theObjTable.offsetWidth;
+            obj.setCapture();
+        }
+        function MouseMoveToResize(obj) {
+            if (!obj.mouseDownX) return false;
+            var newWidth = obj.pareneTdW * 1 + event.clientX * 1 - obj.mouseDownX;
+            if (newWidth > 0) {
+                obj.parentElement.style.width = newWidth;
+                theObjTable.style.width = obj.pareneTableW * 1 + event.clientX * 1 - obj.mouseDownX;
+            }
+        }
+        function MouseUpToResize(obj) {
+            obj.releaseCapture();
+            obj.mouseDownX = 0;
+        }
+    </script>
+</head>
+<body>
+    拖动表列改变table的列宽度
+    <table id=theObjTable border=1 > 
+   <tr > 
+    <td > 
+     <font onmouseup="MouseUpToResize(this);" onmousemove="MouseMoveToResize(this);" onmousedown="MouseDownToResize(this);" style="position:relative;width:2;z-index:1;left:expression(this.parentElement.offsetWidth-1);cursor:e-resize;"> </font>
+     列一 
+    </td> 
+    <td > 
+     <font style="position:relative;width:2;z-index:1;left:expression(this.parentElement.offsetWidth-1);cursor:e-resize;" onmousedown="MouseDownToResize(this);"onmousemove="MouseMoveToResize(this);"onmouseup="MouseUpToResize(this);"> </font>
+     列二 
+    </td> 
+    <td > 
+     <font style="position:relative;width:2;z-index:1;left:expression(this.parentElement.offsetWidth-1);cursor:e-resize;" onmousedown="MouseDownToResize(this);"onmousemove="MouseMoveToResize(this);"onmouseup="MouseUpToResize(this);"> </font>
+     列三 
+    </td> 
+   </tr>
+
+   <tr > 
+    <td > 
+     <font style="position:relative;width:2;z-index:1;left:expression(this.parentElement.offsetWidth-1);cursor:e-resize;" onmousedown="MouseDownToResize(this);"onmousemove="MouseMoveToResize(this);"onmouseup="MouseUpToResize(this);"> </font>
+     列一 
+    </td> 
+    <td > 
+     <font style="position:relative;width:2;z-index:1;left:expression(this.parentElement.offsetWidth-1);cursor:e-resize;" onmousedown="MouseDownToResize(this);"onmousemove="MouseMoveToResize(this);"onmouseup="MouseUpToResize(this);"> </font>
+     列二 
+    </td> 
+    <td > 
+     <font style="position:relative;width:2;z-index:1;left:expression(this.parentElement.offsetWidth-1);cursor:e-resize;" onmousedown="MouseDownToResize(this);"onmousemove="MouseMoveToResize(this);"onmouseup="MouseUpToResize(this);"> </font>
+     列三 
+    </td> 
+   </tr> 
+ </table> 
+
+</body>
+</html>

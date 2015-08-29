@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <style>
+        #loadbar {
+            width:280px;
+            background-color:#000;
+            border:1px solid #000;
+        }
+        #bar {
+            display:block;
+            font-family:Arial;
+            font-size:12px;
+            background-color:#00d0ff;
+            text-align:center;
+        }
+    </style>
+    <script type="text/javascript">
+        i = 0;
+        function startbar() {
+            showbar = setInterval("setbar()", 500);
+        }
+        function setbar() {
+            i = i + 5;
+            if (i >= 100) {
+                clearInterval(showbar);
+            }
+            document.getElementById("bar").style.width = i + "%";
+            document.getElementById("bar").innerHTML = i + "%";
+        }
+    </script>
+</head>
+<body onload="startbar();">
+    <div id="loadbar">
+        <strong id="bar" style="width:0%">30%</strong>
+    </div>
+</body>
+</html>

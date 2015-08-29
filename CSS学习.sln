@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSS学习", "CSS学习\CSS学习.csproj", "{BC735143-034A-4EBD-8B93-B1FC9D7B9E56}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSS网站元素设计", "CSS网站元素设计\CSS网站元素设计.csproj", "{AE6FB074-A37C-4547-85B2-A52700B11BC7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSS内容排版", "CSS内容排版\CSS内容排版.csproj", "{2AF752DC-C0F5-4646-9203-6CE6A714D8C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSS高级应用与技巧", "CSS高级应用与技巧\CSS高级应用与技巧.csproj", "{77A090DB-0A27-4D1F-9DB4-F7E763B95C6C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "高级特效", "高级特效\高级特效.csproj", "{7D5B6E20-C9F1-4385-8962-3CB0343921FC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BC735143-034A-4EBD-8B93-B1FC9D7B9E56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC735143-034A-4EBD-8B93-B1FC9D7B9E56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC735143-034A-4EBD-8B93-B1FC9D7B9E56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC735143-034A-4EBD-8B93-B1FC9D7B9E56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE6FB074-A37C-4547-85B2-A52700B11BC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE6FB074-A37C-4547-85B2-A52700B11BC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE6FB074-A37C-4547-85B2-A52700B11BC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE6FB074-A37C-4547-85B2-A52700B11BC7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2AF752DC-C0F5-4646-9203-6CE6A714D8C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AF752DC-C0F5-4646-9203-6CE6A714D8C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AF752DC-C0F5-4646-9203-6CE6A714D8C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AF752DC-C0F5-4646-9203-6CE6A714D8C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77A090DB-0A27-4D1F-9DB4-F7E763B95C6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77A090DB-0A27-4D1F-9DB4-F7E763B95C6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77A090DB-0A27-4D1F-9DB4-F7E763B95C6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77A090DB-0A27-4D1F-9DB4-F7E763B95C6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D5B6E20-C9F1-4385-8962-3CB0343921FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D5B6E20-C9F1-4385-8962-3CB0343921FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D5B6E20-C9F1-4385-8962-3CB0343921FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D5B6E20-C9F1-4385-8962-3CB0343921FC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

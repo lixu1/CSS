@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <style>
+        #menu {
+            overflow:hidden;
+            background-color:#fbfef4;
+            width:200px;
+            height:500px;
+        }
+            #menu h1 {
+                margin:0px;
+                color:#739c23;
+                font-size:14px;
+            }
+            #menu li {
+                list-style-type:none;
+                display:block;
+                width:178px;
+                border:1px solid #739c23;
+                border-bottom-width:0px;
+            }
+                #menu li a {
+                    display: block;
+                    text-decoration: none;
+                    width: 100%;
+                    padding: 10px;
+                }
+                    #menu li a span {
+                        display: none;
+                        color: #333;
+                        font-size: 12px;
+                        padding-top: 10px;
+                    }
+                #menu li.end {
+                    border-bottom-width: 3px;
+                }
+                #menu li a:hover {
+                    background: #fff;
+                }
+                    #menu li a:hover span {
+                        display: block;
+                    }
+    </style>
+</head>
+<body>
+    <ul id="menu">
+        <li>
+            <a href="#">
+                <h1>CSS是什么</h1>
+                <span>目前推荐遵循的事W3C与1998年5月12日推荐CSS2</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="#">
+                <h1>HTML是什么</h1>
+                <span>是WEB的基本描述语言</span>
+            </a>
+        </li>
+        <li class="end">
+            <a href="#">
+                <h1>XML是什么</h1>
+                <span>目前推荐的是XML1.0</span>
+            </a>
+        </li>
+
+    </ul>
+</body>
+</html>
